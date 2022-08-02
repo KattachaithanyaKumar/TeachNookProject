@@ -1,0 +1,106 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.page1 {
+    height: 100vh;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.box {
+    background-image: url(images/clear.gif);
+    background-size: cover;
+    width: 35%;
+    height: 50vh;
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    margin-left: 32%;
+    box-shadow: 0 0 40px black;
+}
+
+.location {
+    font-size: 40px;
+    padding-top: 10%;
+}
+
+.temperature {
+    font-size: 70px;
+    padding-bottom: 10%;
+}
+
+.description {
+    position: relative;
+    top: -20px;
+}
+
+.search {
+    position: relative;
+    left: 35%;
+    top: 70%;
+}
+
+.search input {
+    border-radius: 20px;
+    width: 25vw;
+    height: 40px;
+    box-shadow: 0 0 20px black;
+    text-indent: 30px;
+}
+
+.search button {
+    border-radius: 20px;
+    height: 40px;
+    width: 5vw;
+    box-shadow: 0 0 20px black;
+    background-color: white;
+}
+
+.page2 {
+    height: 50vh;
+    background-image: linear-gradient(black, blue);
+    padding: 10%;
+}
+
+.rect {
+    background-color: white;
+    width: 80vw;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 1024px)  {
+    .box {
+        width: 60%;
+        margin-left: 20%;
+    }
+    .search {
+        left: 20%;
+    }
+    .search input {
+        width: 50vw;
+    }
+    .search button {
+        width: 10vw;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .box {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .search {
+        left: 5%;
+    }
+    .search input {
+        width: 70vw;
+    }
+    .search button {
+        width: 15vw;
+    }
+}

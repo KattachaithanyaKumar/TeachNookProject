@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js">
+            
+        </script>
+        <title>Document</title>
+
+    </head>
+
+    <body onload="setbackground()">
+        <div class="page1" id = "back">
+            <div class="box" id = "box">
+                <h3 class = "location">Delhi</h1>
+                <p><img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" /><span class = "description"> calm</span></p>
+                <h1 class = "temperature">20°C</h1>
+                <p> Pressure: <span class = "pres">30</span> | <br>
+                    Humidity: <span class = "hum">40</span> | <br>
+                    wind speed: <span class = "wind">100</span> |
+                </p>
+            </div>
+
+            <div class="search">
+                <input type="text" id = "search-bar"  class = "search-bar" placeholder="Location">
+                <button onclick="check()">search</button>
+            </div>
+        </div>
+
+        <div class="page2">
+            <div class="rect">
+
+            </div>
+        </div>
+
+    </body>
+
+    
+</html>
