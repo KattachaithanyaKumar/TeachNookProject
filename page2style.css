@@ -5,14 +5,20 @@
 }
 
 body {
-    background-image: url(images/back6.jpg);
+    overflow-x: hidden;
+}
+
+#page {
+    height: 100vh;
     background-size: cover;
 }
 
 .city {
     text-align: center;
-    margin-top: 2%;
+    margin-top: 0%;
     font-size: 80px;
+    color: white;
+    text-shadow: 0 0 20px black;
 }
 
 .content {
@@ -20,17 +26,19 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1f 1fr;
     grid-template-areas: "box box box box" "box box box box";
-    margin-top: 10%;
+    margin-top: 3%;
     margin-left: 5%;
 }
 
+
 .box {
     width: 20vw;
-    height: 25vh;
+    height: 30vh;
     background-color: #3c3c44c7;
     border: 1px solid #eee;
     margin-bottom: 8%;
     box-shadow: 0 0 40px black;
+    border-radius: 15px;
 }
 .day {
     text-align: center;
@@ -46,4 +54,102 @@ body {
 .other {
     text-align: center;
     color: white;
+}
+
+
+.search {
+    position: relative;
+    left: 35%;
+    margin-top: 2%;
+}
+
+.search input {
+    border-radius: 20px;
+    width: 25vw;
+    height: 40px;
+    box-shadow: 0 0 20px black;
+    text-indent: 30px;
+}
+
+.search button {
+    border-radius: 20px;
+    height: 40px;
+    width: 5vw;
+    box-shadow: 0 0 20px black;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 1024px)  {
+    #page {
+        background-size:auto;
+        height: 200vh;
+    }
+    .box {
+        height: 31ch;
+    }
+    .search {
+        left: 25%;
+    }
+    .search input {
+        width: 40vw;
+    }
+    .search button {
+        width: 8vw;
+    }
+    
+}
+
+@media only screen and (max-width: 768px)  {
+    .content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "box box"
+            "box box"
+            "box box"
+            "box box";
+    }
+    .box {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 425px)  {
+    .content {
+        margin-left: 20%;
+        margin-top: 30%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box"
+            "box";
+    }
+    .box {
+        width: 80%;
+    }
+    .city {
+        font-size: 50px;
+    }
+    .search {
+        left: 15%;
+        top: 1%;
+    }
+    .search input {
+        width: 50vw;
+    }
+    .search button {
+        width: 15vw;
+    }
+    #page {
+        background-size:auto;
+        height: 400vh;
+    }
 }

@@ -14,7 +14,7 @@
     background-image: url(images/clear.gif);
     background-size: cover;
     width: 35%;
-    height: 50vh;
+    height: 55vh;
     border-radius: 15px;
     text-align: center;
     position: absolute;
@@ -41,7 +41,7 @@
 .search {
     position: relative;
     left: 35%;
-    top: 70%;
+    top: 80%;
 }
 
 .search input {
@@ -73,9 +73,26 @@
     border-radius: 15px;
 }
 
+a  {
+    text-decoration: none;
+}
+
+.forecast {
+    width: 200px;
+    height: 35px;
+    background-color: white;
+    padding-top: 5px;
+    border-radius: 20px;
+    color: black;
+    margin-left: 35%;
+    margin-top: 5%;
+    box-shadow: 0 0 10px black;
+}
+
 @media only screen and (max-width: 1024px)  {
     .box {
         width: 60%;
+        height: 60vh;
         margin-left: 20%;
     }
     .search {
@@ -87,12 +104,22 @@
     .search button {
         width: 10vw;
     }
+    
+}
+
+@media only screen and (max-width: 768px)  {
+    .forecast {
+        margin-left: 30%;
+    }
 }
 
 @media only screen and (max-width: 425px) {
     .box {
         width: 90%;
         margin-left: 5%;
+    }
+    .temperature {
+        font-size: 60px;
     }
     .search {
         left: 5%;
@@ -102,5 +129,18 @@
     }
     .search button {
         width: 15vw;
+    }
+    .forecast {
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width: 375px)  {
+    .forecast {
+        margin-left: 20%;
+    }
+}
+@media only screen and (max-width: 320px)  {
+    .forecast {
+        margin-left: 15%;
     }
 }

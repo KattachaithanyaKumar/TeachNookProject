@@ -20,7 +20,7 @@ function setbackground()  {
         break;
 
         case 4:
-            document.getElementById("back").style.  backgroundImage = "url('images/back5.jpg')";
+            document.getElementById("back").style.backgroundImage = "url('images/back5.jpg')";
         break;
     }
 }
@@ -28,6 +28,7 @@ function setbackground()  {
 let weather = {
     apiKey: "225363b5844950ebd6ab54338bf2446a",
     fetchWeather: function (city)  {
+        https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
@@ -52,13 +53,14 @@ let weather = {
         setgif(main);
 
         console.log(data);
+
         document.querySelector(".location").innerText = data.name;
         document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".description").innerText = description;
+        document.querySelector(".pres").innerText = data.main.pressure;
     document.querySelector(".temperature").innerText = temp + "°C";
-    document.querySelector(".hum").innerText =
-      "Humidity: " + humidity + "%";
+    document.querySelector(".hum").innerText = humidity + "%";
     document.querySelector(".wind").innerText = speed + " km/h";
     document.querySelector(".box").classList.remove("loading");
     },
@@ -83,7 +85,7 @@ function setgif (main)  {
             document.getElementById("box").style.backgroundImage = "url('images/clouds.gif')";
             break;
 
-        case "Fog":
+        case "Mist":
             document.getElementById("box").style.backgroundImage = "url('images/fog.gif')";
             break;
         

@@ -8,89 +8,91 @@
         <script src = "page2script.js"></script>
         <title>Document</title>
     </head>
-    <body>
-        <div class="heading">
-            <h1 class = "city">Hyderabad</h1>
-        </div>
-        <div class="content">
-            <div class="box">
-                <h1 class="day"> MON </h1>
-                <img src="https://openweathermap.org/img/wn/04n.png" class = "icon" id = "icon">
-                
-                <div class="other">
-                    <p>Pressure: <span class = "pres">30</span></p>
-                    <p>Humidity: <span class = "hum">20</span></p>
-                    <p>Wind speed: <span class = "wind">100</span></p>
-                </div>
+    <body onload="setbackground()">
+        <div id="page">
+            <div class="heading">
+                <h1 class = "city">Hyderabad</h1>
             </div>
-            <div class="box">
-                <h1 class="day"> MON </h1>
-                <img src="https://openweathermap.org/img/wn/04n.png" class = "icon">
-                
-                <div class="other">
-                    <p>Pressure: <span class = "pres">30</span></p>
-                    <p>Humidity: <span class = "hum">20</span></p>
-                    <p>Wind speed: <span class = "wind">100</span></p>
-                </div>
+            <div class="search">
+                <input type="text" id = "search-bar"  class = "search-bar" placeholder="Location">
+                <button onclick="check()">search</button>
             </div>
-            <div class="box">
-                <h1 class="day"> MON </h1>
-                <img src="https://openweathermap.org/img/wn/04n.png" class = "icon">
-                
-                <div class="other">
-                    <p>Pressure: <span class = "pres">30</span></p>
-                    <p>Humidity: <span class = "hum">20</span></p>
-                    <p>Wind speed: <span class = "wind">100</span></p>
+            <div class="content">
+                <div class="box">
+                    <h1 class="day"> MON </h1>
+                    <img src="https://openweathermap.org/img/wn/04n.png" class = "icon ic0" id = "icon">
+                    <div class="other">
+                        <h2>Temperature: <span class = "temp0">0</span></h2>
+                        <p>Pressure: <span class = "pres0">0</span></p>
+                        <p>Humidity: <span class = "hum0">0</span></p>
+                        <p>Wind speed: <span class = "wind0">0</span></p>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <h1 class="day"> MON </h1>
-                <img src="https://openweathermap.org/img/wn/04n.png" class = "icon">
-                
-                <div class="other">
-                    <p>Pressure: <span class = "pres">30</span></p>
-                    <p>Humidity: <span class = "hum">20</span></p>
-                    <p>Wind speed: <span class = "wind">100</span></p>
+                <div class="box">
+                    <h1 class="day"> MON </h1>
+                    <img src="https://openweathermap.org/img/wn/04n.png" class = "icon ic1">
+                    
+                    <div class="other">
+                        <h2>Temperature: <span class = "temp1">0</span></h2>
+                        <p>Pressure: <span class = "pres1">0</span></p>
+                        <p>Humidity: <span class = "hum1">0</span></p>
+                        <p>Wind speed: <span class = "wind1">0</span></p>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <h1 class="day"> MON </h1>
-                <img src="https://openweathermap.org/img/wn/04n.png" class = "icon">
-                
-                <div class="other">
-                    <p>Pressure: <span class = "pres">30</span></p>
-                    <p>Humidity: <span class = "hum">20</span></p>
-                    <p>Wind speed: <span class = "wind">100</span></p>
+                <div class="box">
+                    <h1 class="day"> MON </h1>
+                    <img src="https://openweathermap.org/img/wn/04n.png" class = "icon ic2">
+                    
+                    <div class="other">
+                        <h2>Temperature: <span class = "temp2">0</span></h2>
+                        <p>Pressure: <span class = "pres2">0</span></p>
+                        <p>Humidity: <span class = "hum2">0</span></p>
+                        <p>Wind speed: <span class = "wind2">0</span></p>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <h1 class="day"> MON </h1>
-                <img src="https://openweathermap.org/img/wn/04n.png" class = "icon">
-                
-                <div class="other">
-                    <p>Pressure: <span class = "pres">30</span></p>
-                    <p>Humidity: <span class = "hum">20</span></p>
-                    <p>Wind speed: <span class = "wind">100</span></p>
+                <div class="box">
+                    <h1 class="day"> MON </h1>
+                    <img src="https://openweathermap.org/img/wn/04n.png" class = "icon ic3">
+                    
+                    <div class="other">
+                        <h2>Temperature: <span class = "temp3">0</span></h2>
+                        <p>Pressure: <span class = "pres3">0</span></p>
+                        <p>Humidity: <span class = "hum3">0</span></p>
+                        <p>Wind speed: <span class = "wind3">0</span></p>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <h1 class="day"> MON </h1>
-                <img src="https://openweathermap.org/img/wn/04n.png" class = "icon">
-                
-                <div class="other">
-                    <p>Pressure: <span class = "pres">30</span></p>
-                    <p>Humidity: <span class = "hum">20</span></p>
-                    <p>Wind speed: <span class = "wind">100</span></p>
+                <div class="box">
+                    <h1 class="day"> MON </h1>
+                    <img src="https://openweathermap.org/img/wn/04n.png" class = "icon ic4">
+                    
+                    <div class="other">
+                        <h2>Temperature: <span class = "temp4">0</span></h2>
+                        <p>Pressure: <span class = "pres4">0</span></p>
+                        <p>Humidity: <span class = "hum4">0</span></p>
+                        <p>Wind speed: <span class = "wind4">0</span></p>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <h1 class="day"> MON </h1>
-                <img src="https://openweathermap.org/img/wn/04n.png" class = "icon">
-                
-                <div class="other">
-                    <p>Pressure: <span class = "pres">30</span></p>
-                    <p>Humidity: <span class = "hum">20</span></p>
-                    <p>Wind speed: <span class = "wind">100</span></p>
+                <div class="box">
+                    <h1 class="day"> MON </h1>
+                    <img src="https://openweathermap.org/img/wn/04n.png" class = "icon ic5">
+                    
+                    <div class="other">
+                        <h2>Temperature: <span class = "temp5">0</span></h2>
+                        <p>Pressure: <span class = "pres5">0</span></p>
+                        <p>Humidity: <span class = "hum5">0</span></p>
+                        <p>Wind speed: <span class = "wind5">0</span></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h1 class="day"> MON </h1>
+                    <img src="https://openweathermap.org/img/wn/04n.png" class = "icon ic6">
+                    
+                    <div class="other">
+                        <h2>Temperature: <span class = "temp6">0</span></h2>
+                        <p>Pressure: <span class = "pres6">0</span></p>
+                        <p>Humidity: <span class = "hum6">0</span></p>
+                        <p>Wind speed: <span class = "wind6">0</span></p>
+                    </div>
                 </div>
             </div>
         </div>
