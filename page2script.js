@@ -26,12 +26,18 @@ function setbackground()  {
 }
 
 function setIcon(index, weather)  {
-	console.log(weather);
 	if (weather.includes("rain"))  {
 		document.querySelector(`.ic${index}`).src = "images/icons/rain.png";
 	}else{
 		document.querySelector(`.ic${index}`).src = "images/icons/clouds.png";
 	}
+}
+
+function setDay(time)  {
+	var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+	var d = new Date(time.slice(0,10));
+	return days[d.getDay()];
 }
 
 const options = {
@@ -52,6 +58,7 @@ function fetachWeather()  {
 		.then(response => {
 			for (var i = 0; i < 7; i++)  {
 				setIcon(i, response.response[0].periods[0].weather);
+				document.querySelector(`.d${i}`).innerText = setDay(response.response[0].periods[i].dateTimeISO);
 				document.querySelector(`.temp${i}`).innerText = response.response[0].periods[i].avgFeelslikeC + " °C";
 				document.querySelector(`.pres${i}`).innerText = response.response[0].periods[i].pressureIN;
 				document.querySelector(`.hum${i}`).innerText = response.response[0].periods[i].humidity;

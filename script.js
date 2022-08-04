@@ -70,7 +70,9 @@ let weather = {
 }
 
 function check()  {
+    setbackground();
     weather.search();
+    
 }
 
 weather.fetchWeather("delhi");
