@@ -30,7 +30,7 @@
 
 .temperature {
     font-size: 70px;
-    padding-bottom: 10%;
+    padding-bottom: 3%;
 }
 
 .description {
@@ -78,16 +78,18 @@ a  {
 }
 
 .forecast {
+    text-align: center;
     width: 200px;
     height: 35px;
     background-color: white;
     padding-top: 5px;
     border-radius: 20px;
     color: black;
-    margin-left: 35%;
-    margin-top: 5%;
+    margin-left: 8%;
+    margin-top: 2%;
     box-shadow: 0 0 10px black;
 }
+
 
 @media only screen and (max-width: 1024px)  {
     .box {
@@ -104,12 +106,15 @@ a  {
     .search button {
         width: 10vw;
     }
-    
+    .forecast {
+        margin-left: 20%;
+        margin-top: 2%;
+    }
 }
 
 @media only screen and (max-width: 768px)  {
     .forecast {
-        margin-left: 30%;
+        margin-left: 15%;
     }
 }
 
@@ -131,16 +136,6 @@ a  {
         width: 15vw;
     }
     .forecast {
-        margin-left: 25%;
-    }
-}
-@media only screen and (max-width: 375px)  {
-    .forecast {
-        margin-left: 20%;
-    }
-}
-@media only screen and (max-width: 320px)  {
-    .forecast {
-        margin-left: 15%;
+        margin-left: 0%;
     }
 }
